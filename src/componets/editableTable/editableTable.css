@@ -1,0 +1,55 @@
+.editable-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    z-index: 1;
+}
+
+.editable-table th, .editable-table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+    position: relative;
+}
+
+/* 헤더 셀 스타일 */
+.editable-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+    position: relative;
+}
+
+/* 드래그 핸들 스타일 */
+.resize-handle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 5px;
+    height: 100%;
+    cursor: col-resize;
+    background-color: rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+/* 편집된 행 스타일 */
+.edited-row th, .edited-row td {
+    border: 2px solid red; /* 더 두꺼운 빨간색 보더 */
+}
+
+/* 입력 박스 스타일 */
+.table-cell-input {
+    width: 100%; /* 셀 너비에 맞추기 */
+    height: 100%; /* 셀 높이에 맞추기 */
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    padding: 0;
+}
+
+.table-container {
+    overflow-x: auto; /* 가로 스크롤 */
+    overflow-y: auto; /* 세로 스크롤 */
+    max-height: 80vh; /* 화면 높이에 맞게 조절 */
+    max-width: 100%; /* 화면 너비에 맞게 조절 */
+    border: 1px solid #ccc; /* 스크롤바 영역을 구분하는 테두리 */
+}

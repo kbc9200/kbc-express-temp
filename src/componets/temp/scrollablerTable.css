@@ -1,0 +1,21 @@
+/* 테이블을 감싸는 컨테이너에 가로 스크롤 추가 */
+.table-container {
+    overflow-x: scroll; /* 가로 스크롤바 활성화 */
+    max-width: 80vw; /* 화면에 맞게 조절 */
+    border: 1px solid #ddd; /* 테이블 테두리 */
+    margin-bottom: 20px; /* 다른 콘텐츠와의 간격 */
+}
+
+/* 테이블 스타일 */
+.scrollable-table {
+    width: 100%;
+    min-width: 800px; /* 테이블이 너무 좁아지지 않도록 최소 너비 설정 */
+    border-collapse: collapse;
+}
+
+.scrollable-table th, .scrollable-table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+    white-space: nowrap; /* 긴 텍스트 줄바꿈 방지 */
+}

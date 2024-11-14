@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    width: 100%;
+    min-height: 100vh; /* 화면 전체 높이 차지 */
+}
+
+/* 사이드바 스타일 */
+
+/* 메인 콘텐츠 스타일 */
+.main-content {
+    flex: 1; /* 남은 공간을 모두 차지하여 수평 배치 */
+    padding: 20px;
+    margin-left: min(calc(25vw + 40px), 290px); /* 기본적으로 화면의 20% + 여유 공간을 적용 */
+
+}
